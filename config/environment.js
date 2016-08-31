@@ -2,6 +2,13 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyB4U1zhWAjmeTPaDy9P2hsP7XYyuJt_9nc",
+      authDomain: "auth-test-e4368.firebaseapp.com",
+      databaseURL: "https://auth-test-e4368.firebaseio.com",
+      storageBucket: "auth-test-e4368.appspot.com",
+    },
+    torii: { sessionServiceName: 'session' },
     modulePrefix: 'ember-firebase-demo',
     environment: environment,
     rootURL: '/',
