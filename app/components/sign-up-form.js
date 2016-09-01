@@ -8,6 +8,7 @@ export default Ember.Component.extend({
       auth.createUserWithEmailAndPassword(this.get('email'), this.get('password'));
       this.set('email', null);
       this.set('password', null);
+      this.sendAction('transitionToSignIn');
     }
   }
 });
